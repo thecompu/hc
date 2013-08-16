@@ -49,4 +49,6 @@ table {
 
 /* End Reset */
 
-
+#bg {
+	background: #ccc;
+}
