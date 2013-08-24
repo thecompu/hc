@@ -15,7 +15,21 @@ $(document).ready(function() {
 		        $("#bg").animate({
 		        	backgroundColor: "#FF0000"
 		        }, 1000 );
-		        console.log("Nope!");
+		        console.log("You guessed within three.");
+		    }
+		    else if (Math.abs(answer - guess) <= 12) {
+				console.log("Within 12 block")
+		        $("#bg").animate({
+		        	backgroundColor: "#AB00C2"
+		        }, 1000 );
+		        console.log("You guessed within twelve.");
+		    }
+		    else if (Math.abs(answer - guess) <= 24) {
+				console.log("Within 24 block")
+		        $("#bg").animate({
+		        	backgroundColor: "#0084FF"
+		        }, 1000 );
+		        console.log("You guessed within twenty four.");
 		    }
 		    else {
 			console.log("Ending now!");
